@@ -17,7 +17,8 @@ def main():
         print("Step 1: Get the authorization URL\n")
 
         flow = InstalledAppFlow.from_client_secrets_file(
-            'gmail-credentials.json', SCOPES)
+            'gmail-credentials.json', SCOPES,
+            redirect_uri='http://localhost')
 
         auth_url, _ = flow.authorization_url(prompt='consent')
 
@@ -38,7 +39,8 @@ def main():
         redirect_url = sys.argv[1]
 
         flow = InstalledAppFlow.from_client_secrets_file(
-            'gmail-credentials.json', SCOPES)
+            'gmail-credentials.json', SCOPES,
+            redirect_uri='http://localhost')
 
         # Extract code from URL
         parsed = urlparse(redirect_url)
