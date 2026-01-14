@@ -1,0 +1,4 @@
+#!/bin/bash
+# Wrapper script for email search tool
+
+./venv/bin/python email_search.py "$@"
