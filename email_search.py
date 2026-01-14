@@ -30,7 +30,34 @@ def get_gmail_service():
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
                 'gmail-credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
+
+            # Try to run local server, but handle no browser case
+            try:
+                creds = flow.run_local_server(port=0)
+            except:
+                # Fallback to console-based auth if no browser available
+                print("\nNo browser detected. Please authenticate manually:")
+                print("1. Open this URL in your browser:")
+                print()
+                auth_url, _ = flow.authorization_url(prompt='consent')
+                print(auth_url)
+                print()
+                print("2. After authorizing, you'll be redirected to a localhost URL")
+                print("3. Copy the ENTIRE URL from your browser and paste it here:")
+                print()
+                code_url = input("Paste the redirect URL here: ").strip()
+
+                # Extract code from URL
+                from urllib.parse import urlparse, parse_qs
+                parsed = urlparse(code_url)
+                code = parse_qs(parsed.query).get('code', [None])[0]
+
+                if not code:
+                    print("Error: Could not extract authorization code from URL")
+                    sys.exit(1)
+
+                flow.fetch_token(code=code)
+                creds = flow.credentials
 
         # Save the credentials for the next run
         with open('gmail-token.json', 'w') as token:
