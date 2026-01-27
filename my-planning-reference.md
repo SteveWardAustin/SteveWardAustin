@@ -14,19 +14,17 @@
 
 ## Recurring Weekly Commitments
 <!-- Meetings, classes, standups, etc. that happen every week -->
-<!-- Example: Monday 9:00 AM - Team standup -->
 -
 
 ## Daily Habits / Non-Negotiables
-<!-- Things you want to do every day -->
-<!-- Example: Morning workout, lunch break, wind-down routine -->
--
+- In-room calisthenics first thing (streak started - do not break)
+- 3 cold outreach emails from template (~10 min)
 
 ## Work Hours
-<!-- Example: 8:00 AM - 5:00 PM -->
-- Start:
-- End:
+- Wake: ~6:30 - 7:00 AM (varies)
+- Day wraps: flexible
 
 ## Notes
-<!-- Anything else useful for planning: commute time, energy patterns, etc. -->
--
+- Home to office: 20 min drive
+- Office to AI event venue: 30 min drive
+- Co-host for AI services: Camilo
