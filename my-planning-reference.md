@@ -1,12 +1,13 @@
 # Daily Planning Reference
 
-## Long-Term Goals
-<!-- Goals for the next 1-3 years -->
--
+## Financial Goals (URGENT)
+- Reduce credit card debt (Amex biz ~$9K, Chase ~$8K as of Jan 2026)
+- Grow Google Ads client list → more recurring revenue
+- Begin monetizing AI skills: data analytics for businesses (Python, clustering, temporal models)
+- Today's AI event with Camilo is part of this push
 
-## Medium-Term Goals
-<!-- Goals for the next 1-6 months -->
--
+## Health Goals
+- Maintain daily calisthenics streak (do not break)
 
 ## Short-Term Goals
 <!-- Goals for this week / next 2 weeks -->
